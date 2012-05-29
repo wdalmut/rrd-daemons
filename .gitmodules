@@ -1,0 +1,3 @@
+[submodule "vendors/PHP-Daemon"]
+	path = vendors/PHP-Daemon
+	url = https://github.com/shaneharter/PHP-Daemon.git
