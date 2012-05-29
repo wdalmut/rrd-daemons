@@ -2,14 +2,22 @@
 class Eg 
     extends Core_Daemon
 {
+    protected $loop_interval = 2;
+
+    public function __construct()
+    {
+        $this->verbose(false);
+    }
+
     protected function setup()
     {
-        
     }
     
     protected function execute()
     {
-        echo "OK" . PHP_EOL;
+	$VALUE = rand(0,10);
+        echo "PUTVAL \"WDM/exec-magic/gauge-magic_level\" interval={$this->loop_interval} N:$VALUE";
+	echo PHP_EOL;
     } 
     
     protected function log_file()
