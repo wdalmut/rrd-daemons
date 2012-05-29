@@ -7,6 +7,7 @@ class Eg
     public function __construct()
     {
         $this->verbose(false);
+	parent::__construct();
     }
 
     protected function setup()
